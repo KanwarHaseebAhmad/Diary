@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">My Diary</h1>
+    </header>
+    <section class="section journal-section">
+        <div class="container">
+            <div class="container-row container-row-journal">
+                <div class="container-item container-item-journal">
+                    <form action="" id="entryForm">
+                        <label for="title" class="journal-label">Title </label>
+                        <input type="text" id="title" class="entry-text-title" placeholder="Title ✏️">
+                        <label for="desc" class="journal-label"> Desctiption</label>
+                        <textarea name="description" class="entry-text-box" id="desc" cols="30" rows="10">
+                            </textarea>
+                        <button class="btn-main entry-submit-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <p class="single-entry-date"></p>
+        </div>
+    </section>
+    <section class="section sectionEntryResults" id="entryResultsSection">
+        <div class="container">
+          <div class="container-row entryResultRow"></div>
+        </div>
+      </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
